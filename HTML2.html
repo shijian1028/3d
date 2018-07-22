@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		.box1{
+			width: 100px;
+			height: 100px;
+			padding: 100px;
+			margin: 0 auto;
+			font: 50px/100px "微软雅黑";
+			color: #000;
+			text-align: center;
+			transform-style: preserve-3d;
+			transition: 10s;
+			position: relative;
+			perspective-origin: top;
+		}
+		
+		
+		
+		.box1:hover{
+			transform: rotate3d(1,1,0, 360deg);
+		}
+		
+		
+		
+		
+		
+		.box2{
+			height: 100px;
+			width: 100px;
+		}
+		.box2 div{
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			top: 100px;
+			background: red;
+			
+		}
+		.box2 div:nth-of-type(1){
+			transform: rotateY(90deg) translateZ(50PX);
+		}
+		.box2 div:nth-of-type(2){
+			transform: rotateY(180deg) translateZ(50PX);
+		}
+		.box2 div:nth-of-type(3){
+			transform: rotateY(270deg)translateZ(50PX);
+		}
+		.box2 div:nth-of-type(4){
+			transform: translateZ(50PX);
+		}
+		.box2 div:nth-of-type(5){
+			transform: rotatex(90deg)translateZ(50PX);
+		}
+		.box2 div:nth-of-type(6){
+			transform: rotatex(-90deg) translateZ(50PX);
+		}
+		/*-----------------
+		 
+		 * */
+		
+		
+		.box3{
+			height: 100px;
+			width: 100px;
+		}
+		.box3 div{
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			background: rgba(0,0,0, .3);
+			
+		}
+		.box3 div:nth-of-type(1){
+			transform: rotateY(90deg) translateZ(100PX);
+		}
+		.box3 div:nth-of-type(2){
+			transform: rotateY(180deg) translateZ(100PX);
+		}
+		.box3 div:nth-of-type(3){
+			transform: rotateY(270deg)translateZ(100PX);
+		}
+		.box3 div:nth-of-type(4){
+			transform: translateZ(100PX);
+		}
+		.box3 div:nth-of-type(5){
+			transform: rotatex(90deg)translateZ(100PX);
+		}
+		.box3 div:nth-of-type(6){
+			transform: rotatex(-90deg) translateZ(100PX);
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<div class="box3">
+			<div>
+				1
+			</div>
+			<div>
+				2
+			</div>
+			<div>
+				3
+			</div>
+			<div>
+				4
+			</div>
+			<div>
+				5
+			</div>
+			<div>
+				6
+			</div>
+		</div>
+		<div class="box2">
+			<div>
+				1
+			</div>
+			<div>
+				2
+			</div>
+			<div>
+				3
+			</div>
+			<div>
+				4
+			</div>
+			<div>
+				5
+			</div>
+			<div>
+				6
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>
